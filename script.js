@@ -10,83 +10,85 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Catálogo de pedras (imagens do WhatsApp)
+// Catálogo de pedras (imagens da pasta Imagens)
 const catalogItems = [
-    // Pias - Mármore
-    { fileName: 'WhatsApp Image 2026-03-09 at 18.57.35.jpeg', model: 'pia', stoneType: 'mármore' },
-    { fileName: 'WhatsApp Image 2026-03-09 at 18.57.36.jpeg', model: 'pia', stoneType: 'mármore' },
-    { fileName: 'WhatsApp Image 2026-03-09 at 18.57.42.jpeg', model: 'pia', stoneType: 'mármore' },
-    { fileName: 'WhatsApp Image 2026-03-09 at 18.57.44 (1).jpeg', model: 'pia', stoneType: 'mármore' },
-    { fileName: 'WhatsApp Image 2026-03-09 at 18.57.44.jpeg', model: 'pia', stoneType: 'mármore' },
-    { fileName: 'WhatsApp Image 2026-03-09 at 18.57.45 (1).jpeg', model: 'pia', stoneType: 'mármore' },
-    { fileName: 'WhatsApp Image 2026-03-09 at 18.57.45 (2).jpeg', model: 'pia', stoneType: 'mármore' },
-    { fileName: 'WhatsApp Image 2026-03-09 at 18.57.45.jpeg', model: 'pia', stoneType: 'mármore' },
-    { fileName: 'WhatsApp Image 2026-03-09 at 18.57.47 (1).jpeg', model: 'pia', stoneType: 'mármore' },
-    { fileName: 'WhatsApp Image 2026-03-09 at 18.57.47 (2).jpeg', model: 'pia', stoneType: 'mármore' },
-    { fileName: 'WhatsApp Image 2026-03-09 at 18.57.47.jpeg', model: 'pia', stoneType: 'mármore' },
+    // coleção de área gourmet em Taj Mahal
+    { fileName: 'areagourmettajmahal1.jpeg', model: 'área gourmet', stoneType: 'taj mahal' },
+    { fileName: 'areagourmettajmahal2.jpeg', model: 'área gourmet', stoneType: 'taj mahal' },
 
-    // Lavatórios - Granito
-    { fileName: 'WhatsApp Image 2026-03-09 at 18.59.46.jpeg', model: 'lavatório', stoneType: 'granito' },
-    { fileName: 'WhatsApp Image 2026-03-09 at 18.59.47 (1).jpeg', model: 'lavatório', stoneType: 'granito' },
-    { fileName: 'WhatsApp Image 2026-03-09 at 18.59.47 (2).jpeg', model: 'lavatório', stoneType: 'granito' },
-    { fileName: 'WhatsApp Image 2026-03-09 at 18.59.47.jpeg', model: 'lavatório', stoneType: 'granito' },
-    { fileName: 'WhatsApp Image 2026-03-09 at 18.59.48.jpeg', model: 'lavatório', stoneType: 'granito' },
-    { fileName: 'WhatsApp Image 2026-03-09 at 18.59.50 (1).jpeg', model: 'lavatório', stoneType: 'granito' },
-    { fileName: 'WhatsApp Image 2026-03-09 at 18.59.50 (2).jpeg', model: 'lavatório', stoneType: 'granito' },
-    { fileName: 'WhatsApp Image 2026-03-09 at 18.59.50 (3).jpeg', model: 'lavatório', stoneType: 'granito' },
-    { fileName: 'WhatsApp Image 2026-03-09 at 18.59.50 (4).jpeg', model: 'lavatório', stoneType: 'granito' },
-    { fileName: 'WhatsApp Image 2026-03-09 at 18.59.50.jpeg', model: 'lavatório', stoneType: 'granito' },
-    { fileName: 'WhatsApp Image 2026-03-09 at 18.59.51 (1).jpeg', model: 'lavatório', stoneType: 'granito' },
-    { fileName: 'WhatsApp Image 2026-03-09 at 18.59.51 (2).jpeg', model: 'lavatório', stoneType: 'granito' },
-    { fileName: 'WhatsApp Image 2026-03-09 at 18.59.51 (3).jpeg', model: 'lavatório', stoneType: 'granito' },
-    { fileName: 'WhatsApp Image 2026-03-09 at 18.59.51.jpeg', model: 'lavatório', stoneType: 'granito' },
+    // coleção de bancada em Marrom Imperador
+    { fileName: 'bancadamarromimperador1.jpeg', model: 'bancada', stoneType: 'marrom imperador' },
+    { fileName: 'bancadamarromimperador2.jpeg', model: 'bancada', stoneType: 'marrom imperador' },
 
-    // Pias - Quartzo
-    { fileName: 'WhatsApp Image 2026-03-09 at 19.07.12.jpeg', model: 'pia', stoneType: 'quartzo' },
-    { fileName: 'WhatsApp Image 2026-03-09 at 19.07.13 (1).jpeg', model: 'pia', stoneType: 'quartzo' },
-    { fileName: 'WhatsApp Image 2026-03-09 at 19.07.13 (2).jpeg', model: 'pia', stoneType: 'quartzo' },
-    { fileName: 'WhatsApp Image 2026-03-09 at 19.07.13 (3).jpeg', model: 'pia', stoneType: 'quartzo' },
-    { fileName: 'WhatsApp Image 2026-03-09 at 19.07.13 (4).jpeg', model: 'pia', stoneType: 'quartzo' },
-    { fileName: 'WhatsApp Image 2026-03-09 at 19.07.13.jpeg', model: 'pia', stoneType: 'quartzo' },
-    { fileName: 'WhatsApp Image 2026-03-09 at 19.07.14 (1).jpeg', model: 'pia', stoneType: 'quartzo' },
-    { fileName: 'WhatsApp Image 2026-03-09 at 19.07.14 (2).jpeg', model: 'pia', stoneType: 'quartzo' },
-    { fileName: 'WhatsApp Image 2026-03-09 at 19.07.14 (3).jpeg', model: 'pia', stoneType: 'quartzo' },
-    { fileName: 'WhatsApp Image 2026-03-09 at 19.07.14 (4).jpeg', model: 'pia', stoneType: 'quartzo' },
-    { fileName: 'WhatsApp Image 2026-03-09 at 19.07.14.jpeg', model: 'pia', stoneType: 'quartzo' },
-    { fileName: 'WhatsApp Image 2026-03-09 at 19.07.15 (1).jpeg', model: 'pia', stoneType: 'quartzo' },
-    { fileName: 'WhatsApp Image 2026-03-09 at 19.07.15 (2).jpeg', model: 'pia', stoneType: 'quartzo' },
-    { fileName: 'WhatsApp Image 2026-03-09 at 19.07.15 (3).jpeg', model: 'pia', stoneType: 'quartzo' },
-    { fileName: 'WhatsApp Image 2026-03-09 at 19.07.15 (4).jpeg', model: 'pia', stoneType: 'quartzo' },
-    { fileName: 'WhatsApp Image 2026-03-09 at 19.07.15.jpeg', model: 'pia', stoneType: 'quartzo' },
-    { fileName: 'WhatsApp Image 2026-03-09 at 19.07.16.jpeg', model: 'pia', stoneType: 'quartzo' }
+    // coleção de champanheira em Taj Mahal
+    { fileName: 'champanheiratajmahal1.jpeg', model: 'champanheira', stoneType: 'taj mahal' },
+
+    // coleção churrasqueira em Preto São Gabriel
+    { fileName: 'churrasqueirapretosaogabriel1.jpeg', model: 'churrasqueira', stoneType: 'preto são gabriel' },
+    { fileName: 'churrasqueirapretosaogabriel2.jpeg', model: 'churrasqueira', stoneType: 'preto são gabriel' },
+    { fileName: 'churrasqueirapretosaogabriel3.jpeg', model: 'churrasqueira', stoneType: 'preto são gabriel' },
+    { fileName: 'churrasqueirapretosaogabriel4.jpeg', model: 'churrasqueira', stoneType: 'preto são gabriel' },
+    { fileName: 'churrasqueirapretosaogabriel5.jpeg', model: 'churrasqueira', stoneType: 'preto são gabriel' },
+
+    // coleção cozinha em Preto São Gabriel
+    { fileName: 'cozinhapretosaogabriel1.jpeg', model: 'cozinha', stoneType: 'preto são gabriel' },
+    { fileName: 'cozinhapretosaogabriel2.jpeg', model: 'cozinha', stoneType: 'preto são gabriel' },
+
+    // coleção lavabo em Quartzo Verde Guatemala
+    { fileName: 'lavaboquartzitoverdeguatemala1.jpeg', model: 'lavabo', stoneType: 'quartzo verde guatemala' },
+    { fileName: 'lavaboquartzitoverdeguatemala2.jpeg', model: 'lavabo', stoneType: 'quartzo verde guatemala' },
+    { fileName: 'lavaboquartzitoverdeguatemala3.jpeg', model: 'lavabo', stoneType: 'quartzo verde guatemala' }
 ];
 
 const getImagePath = (fileName) => encodeURI(`Imagens/${fileName}`);
 
 const normalizeFileName = (fileName) => {
-    // Remove incremental suffixes like " (1)", " (2)" from o nome do arquivo
-    const match = fileName.match(/^(.*?)(?: \(\d+\))?\.jpe?g$/i);
+    // Remove incremental suffixes como " (1)", " (2)" do nome do arquivo, para agrupar pela base
+    const match = fileName.match(/^(.*?)(?: \(\d+\))?\.(jpe?g|png|webp)$/i);
     return match ? match[1] : fileName;
 };
 
-const groupedCatalog = (() => {
+const getSequenceNumber = (fileName) => {
+    const match = fileName.match(/\((\d+)\)\.(jpe?g|png|webp)$/i);
+    return match ? Number(match[1]) : 0;
+};
+
+const buildGroupedCatalog = () => {
     const groups = {};
 
     catalogItems.forEach(item => {
-        const key = normalizeFileName(item.fileName);
-        if (!groups[key]) {
-            groups[key] = {
-                key,
+        const bucketKey = `${item.model}__${item.stoneType}`;
+        if (!groups[bucketKey]) {
+            groups[bucketKey] = {
+                key: bucketKey,
                 items: [],
                 model: item.model,
                 stoneType: item.stoneType,
             };
         }
-        groups[key].items.push(item);
+        groups[bucketKey].items.push(item);
     });
 
-    return Object.values(groups);
-})();
+    const grouped = Object.values(groups);
+
+    grouped.forEach(group => {
+        group.items.sort((a, b) => {
+            const seqA = getSequenceNumber(a.fileName);
+            const seqB = getSequenceNumber(b.fileName);
+            if (seqA !== seqB) return seqA - seqB;
+            return a.fileName.localeCompare(b.fileName, undefined, { numeric: true, sensitivity: 'base' });
+        });
+    });
+
+    return grouped;
+};
+
+let groupedCatalog = buildGroupedCatalog();
+
+const refreshGroupedCatalog = () => {
+    groupedCatalog = buildGroupedCatalog();
+    renderCatalog();
+};
 
 let currentGroup = null;
 let currentIndex = 0;
