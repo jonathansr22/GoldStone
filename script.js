@@ -157,36 +157,22 @@ const createCard = (group) => {
 };
 
 const renderCatalog = () => {
-    const modelFilter = document.getElementById('modelFilter').value;
-    const stoneTypeFilter = document.getElementById('stoneTypeFilter').value;
     const grid = document.getElementById('catalogGrid');
 
     grid.innerHTML = '';
 
-    const filteredGroups = groupedCatalog.filter(group => {
-        const modelMatch = modelFilter === 'all' || group.model === modelFilter;
-        const stoneMatch = stoneTypeFilter === 'all' || group.stoneType === stoneTypeFilter;
-        return modelMatch && stoneMatch;
-    });
-
-    if (!filteredGroups.length) {
+    if (!groupedCatalog.length) {
         const emptyMessage = document.createElement('p');
-        emptyMessage.textContent = 'Nenhuma pedra encontrada para os filtros selecionados.';
+        emptyMessage.textContent = 'Nenhuma pedra encontrada.';
         emptyMessage.style.color = '#ddd';
         grid.appendChild(emptyMessage);
         return;
     }
 
-    filteredGroups.forEach(group => grid.appendChild(createCard(group)));
+    groupedCatalog.forEach(group => grid.appendChild(createCard(group)));
 };
 
 window.addEventListener('DOMContentLoaded', () => {
-    const modelFilter = document.getElementById('modelFilter');
-    const stoneTypeFilter = document.getElementById('stoneTypeFilter');
-
-    modelFilter.addEventListener('change', renderCatalog);
-    stoneTypeFilter.addEventListener('change', renderCatalog);
-
     const modal = document.getElementById('galleryModal');
     const closeBtn = modal.querySelector('.modal-close');
     const prevBtn = modal.querySelector('.modal-prev');
